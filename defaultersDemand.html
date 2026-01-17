@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+  <head >
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="inspectionReport.css">
+
+    <script src="defaultersDemand.js"></script>
+
+    <script src="html2pdf.bundle.min.js"></script>
+
+  </head> 
+
+  <html >
+
+  <body >
+
+    <div id="penaltyForm"  >
+      <script>demandFormGenerator()</script>
+      
+    </div>
+
+    <div id="buttons">
+
+      <button onclick="createPenaltyNotice()"> Print Penalty Demand </button>
+      
+    </div>
+
+  <br><br>
+  <div id="barua">
+
+
+      <div id="skippedDemand">
+        
+        <span></span> <br> <br> <!--Document Reference-->
+
+        <span></span> <br> <br> <!--Date-->
+
+        <span></span> <br> <!--Addressee Title-->
+        <span></span> <br> <!--Employer Name-->
+        <span></span> <br> <!--Employer Address-->
+        <span></span> <br> <br> <!--Box location-->
+
+        <span></span> <br> <br> <!--Dear Sir / Madam-->
+
+        <b><u><span></span></u></b>  <!--Subject-->
+
+        <span></span>   <!--First Paragraph--> 
+        <span></span>
+        
+        <span id="copyList"></span> <!--C.C. details-->
+
+      </div>
+
+    </div>
+    
+</body>
+</html>
+

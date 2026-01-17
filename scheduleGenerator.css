@@ -1,0 +1,88 @@
+body{
+  width: fit-content;  padding: 10px;  
+  margin: 10px 10px 10px 50px;
+  width: 80%; background-image: url('BackgroundNHIFwebApp.jpg');
+  
+}
+
+table {
+  width: sticky;  padding: 1px; margin: 2px;  height:auto; 
+  position: sticky; margin-left: auto; margin-right: auto;
+}
+
+#scheduleSheet {
+  position: sticky; margin-left: auto; margin-right: auto; width: fit-content;
+  /* border: 1px solid red; */
+}
+
+#contributions_schedule{
+
+  position: sticky; margin-left: auto; margin-right: auto;
+
+}
+
+#sf203 {
+  position: sticky; margin-left: auto; margin-right: auto;
+}
+
+
+td {
+ width: fit-content; text-align: center;  height: fit-content; border: 1px solid black;
+ border-radius: 2px; 
+ 
+} 
+
+output, input {
+  height: fit-content;  border: none;
+}
+
+input:hover {
+ background-color: whitesmoke
+}
+
+input:focus { 
+
+  background-color: lightcyan; 
+  
+ } 
+
+#buttons {
+  padding: 2px; margin: 5px 0px 5px 8px; width: auto; font-size: 12px; display: inline-block; position: sticky;
+  margin-left: 15%; margin-right: 15%; background-color: lightcyan; 
+ }
+
+
+td > output {
+  text-align: center; font-size: 11px; font-family: 'Arial Narrow Bold'; width: fit-content; 
+}
+
+td > input {
+  outline:unset; width: 56px; border:0 ; font-weight: bold;  text-align: center;
+}
+
+ 
+/* #copyList {
+  font-size: 14px; font-family: 'Arial Narrow Bold';
+} */
+
+#debtTableHeader {
+  text-align:center; font-size:11.5px; font-weight:bold; text-decoration: underline;font-family: 'Arial Narrow Bold';
+  padding: 3px;
+}
+
+#debtTableMonths > td{
+  text-align:center; font-size:11px; font-weight:bold; text-decoration: underline; text-align: center;
+  font-family:'Arial Narrow Bold'; padding: 3px;
+}
+
+
+tfoot:last-child{
+
+  font-weight:bold;
+   
+ }
+
+ tbody tr:nth-child(odd){
+   background-color: snow;
+ }
+ 

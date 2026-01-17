@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+  <head >
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <script src="inspectionReportForm.js"></script> -->
+    
+    <link rel="stylesheet" href="inspectionReport.css">
+
+    <!-- <script src="Clock.js"></script> -->
+
+    <link rel="stylesheet" href="scheduleGenerator.css">
+
+    <!-- <script src="altcode.js"></script> -->
+    
+    <!-- <script src="displayOutput.js"></script> -->
+
+    <!-- <script src="skippedDemand.js"></script> -->
+
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+    <script src="es6-promise.auto.min.js"></script>
+    <script src="jspdf.min.js"></script>
+    <script src="html2canvas.min.js"></script>
+    <script src="html2pdf.min.js"></script>
+    <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script> -->
+  
+    <script src="html2pdf.bundle.min.js"></script>
+    <script src="inspectionReport.js"></script>
+  </head> 
+<html >
+  <body >
+
+    <div id="sf203"  >
+      <script>sf203()</script>
+      
+    </div>
+
+    <div id="buttons">
+
+    <button onclick="scheduleGenerator()">Fill Schedule</button>
+
+    </div>
+    
+    <br>
+
+      <div id="scheduleSheet" >
+        <!-- <script>scheduleGenerator()</script> -->
+        
+      </div>
+      
+
+      <div id="buttons">
+
+      <button onclick="fetchData2();debtSummaryTable(); debtTableBuilder(); skippedDemand()" >Get Total / Update letters</button>
+      <button onclick="fetchData2();debtSummaryTable(); debtTableBuilder(); skippedDemand(); printLetters()">Print Inspection report</button> 
+      <button onclick="printPenalty()"> Print Penalty </button>
+      <button onclick="printSchedule()"> Print Schedule </button>
+      <!-- <button onclick="reset() ">Clear Schedule</button> -->
+        
+      </div>
+  
+  <div id="barua">
+
+      <div id="inspectionReportLetter">
+        
+        <span></span> <br> <br> <!--Document Reference-->
+
+        <span></span> <br> <br> <!--Date-->
+
+        <span></span> <br> <!--Addressee Title-->
+        <span></span> <br> <!--Employer Name-->
+        <span></span> <br> <!--Employer Address-->
+        <span></span> <br> <br> <!--Box location-->
+
+        <span></span> <br> <br> <!--Dear Sir / Madam-->
+
+        <b><u><span></span></u></b> <br> <br> <!--Subject-->
+
+        <span></span>  <span></span>  <span></span> <br> <br> <!--First Paragraph-->
+
+
+          <span></span> <br> <!--I.Contributions-->
+            <span></span> <!--Observation 1 first sentence-->
+             <span></span> <!--Start of assessment period-->
+             <span></span> <!--End of assesment period-->
+             <span></span> <br> <br> <!--Assessed amount-->
+
+          <span></span> <!--II. Penalties-->
+            <span></span> <!--First sentence -->
+            <span></span> <!--accrued penalty amount-->
+            <span></span> <!--as at the-->
+            <span></span> <!--accrued penalty date-->
+            <span></span> <!--SSPAS penalties first statement-->
+            <span></span> <!--SSPAS penalties amount-->
+            <span></span> <!--SSPAS Penalties second statement-->
+
+          <span></span> <!--III. Registration-->
+            <span></span> <!--First sentence -->
+
+          <span></span> <!--IV. Records-->
+            <span></span> <!--First sentence -->
+
+          <span></span> <!--Returns -->
+            <span></span> <!--Return statement A-->
+            <span></span> <!--Returns period-->
+            <span></span> <!--Return statement B-->
+
+            <span></span> <!--Thanks for your cooperation and Yours Faithfully-->
+            
+            <span></span> <!--FOR BRANCH MANAGER KITENGELA-->
+
+            <span id="copyList"></span> <!--C.C. details-->
+
+      </div>
+
+      <div id="demandNotice">
+        
+        <span></span> <br> <br> <!--Document Reference-->
+      
+              <span></span> <br> <br> <!--Date-->
+      
+              <span></span> <br> <!--Addressee Title-->
+              <span></span> <br> <!--Employer Name-->
+              <span></span> <br> <!--Employer Address-->
+              <span></span> <br> <br> <!--Box location-->
+      
+              <span></span> <br> <br> <!--Dear Sir / Madam-->
+      
+              <b><u><span></span></u></b> <!--Subject-->
+      
+              <span></span> <span></span> <br> <!--First Paragraph-->
+
+                  <span></span> <!--Observation 1 first sentence A-->
+                   <span></span> <!--contributions debt and accrued penalties intro-->
+                   <span></span> <!--accrued penalties figure and SSPAS penalties intro-->
+                   <span></span> <!--SSPAS Penalties-->
+      
+                <span></span> <!--Section 55 and penalties warning-->
+                  <span></span> <!--You are therefor advised -->
+                  <span></span> <!--Total Debt-->
+                  <span></span> <!--Yours Faithfully plus CO Name and For BM sign off-->
+                  <span id="copyList"></span> <!--C.C. details-->
+     
+      </div>
+
+      <div id="output">
+        <!-- <script>debtSummary()</script> -->
+        <!--<button onclick="addRow2()">Output</button> -->
+      </div>
+
+      <br>
+
+  </div>
+  
+
+</body>
+</html>
+

@@ -1,0 +1,107 @@
+body {
+  width: 80%; 
+  /* background-image: url('BackgroundNHIFwebApp.jpg'); */
+}
+
+.reportFrame {
+  border: 2px solid black; width: 610px; height: fit-content;  margin-top: 3px; padding: 2px;
+  border-radius: 5px; background-color:azure; position: sticky; margin-left: 15%; margin-right: 15%;
+}
+
+.reportSec {
+  border: 1.5px solid black; width: 600px; height: 450; margin: 10px 10px 10px 0; padding: 1px; border-radius: 5px;
+}
+
+.reportSec:nth-child(1) {
+  height: fit-content; padding: 3.5px; background-color:ivory; text-align: center; font-weight: bolder;
+}
+
+.reportSec:nth-child(2) {
+  height: fit-content; padding: 3px;
+}
+
+.reportSec:nth-child(3) {
+  height: fit-content; padding: 3px;
+}
+
+.employerCo {
+  border: 1px solid black; width: 280px; height: 15px; display: inline-block; margin:  3.2px 1px 1px 2px ; padding: 0;
+}
+
+.observations {
+  border: 1px solid black; width: 560px; height: 15px; display: inline-block; margin: 3.5px 2px 2px 8px; 
+  
+}
+
+/* #inspectionReportLetter{
+
+  position: sticky; margin-left: auto; margin-right: auto; width: 85%; text-align: justify;
+
+} */
+
+.coDetails{
+  width: 185px; margin: 2px 1px 1px 0; 
+}
+
+.employerDetails{
+
+  width: 393px; margin: 2px 1px 1px 2px;
+
+}
+
+.recordCheckers{
+  width: 18px; margin: 2px 1px 1px 0;
+}
+
+.recordDetails{
+  width: 300px; margin: 2px 1px 1px 0;
+}
+
+.questions {
+    width:478px; margin: 2px 1px 1px 0; 
+  }
+  
+.answers {
+    width: 100px; margin: 2px 1px 1px 2px;  text-align: center;
+  }
+
+.reportSec > input {
+  font-weight: bold; font-size: 12px; font-weight: normal; border: 1.5px solid black; padding: 3px;
+  border-radius: 5px; background-color:ivory;
+}
+
+.reportSec > button {
+  height:5px; 
+}
+
+.reportSec > input:hover {
+  background-color:lightcyan;
+}
+
+.reportSec > input:focus {
+  background-color: whitesmoke;
+}
+
+
+ #skippedDemand  {
+
+  text-align: justify;  font-family: calibri; font-size: 14px;
+  position: sticky; margin-left: auto; margin-right: auto;  
+} 
+
+ #barua {
+  text-align: justify;
+ }
+
+/* #copyList {
+  font-size: 12px; font-family: 'Arial Narrow Bold'; font-weight: bold;
+} */
+
+#copyList {
+  font-size: 12px; font-family: 'Arial'; font-weight: bold;
+} 
+
+
+#disclaimer {
+   text-align: justify; position: relative; font-size: 12px; margin-top: 0;
+}

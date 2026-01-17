@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+  <head >
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="inspectionReport.css">
+    <link rel="stylesheet" href="scheduleGenerator.css">
+
+    <script src="accruedPenalties.js"></script>
+
+    <script src="accruedPenalties.js"  type="module"></script>
+
+
+    <script src="html2pdf.bundle.min.js"></script>
+
+  </head> 
+
+  <html >
+
+  <body >
+
+    <div id="penaltyForm"  >
+      
+      <script>accruedPenaltiesForm()</script>
+     
+    </div>
+    
+    <br>
+
+    <div id="scheduleSheet"  >
+
+      <script>scheduleGenerator()</script>
+      
+    </div>
+    <br>
+    <!-- <div id="buttons">
+
+      <button onclick="fetchData2();debtSummaryTable(); debtTableBuilder(); printPenalty()"> Print Penalty </button>
+      
+    </div> -->
+
+  <div id="barua">
+
+  <div id="penaltyDemandLetter">
+        
+    <span id="output">  </span>
+    <span id="disclaimer"></span>
+
+  </div>
+    
+</body>
+</html>
+

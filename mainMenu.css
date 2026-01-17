@@ -1,0 +1,23 @@
+body {
+  width: 80%; background-image: url('BackgroundNHIFwebApp.jpg');
+}
+
+ul {
+  list-style-type: none; width: inherit; position: absolute; margin-left: 5%;
+}
+img{
+  width: 94%; border: 1px double greenyellow; border-radius: 5px; margin-left: 2.5%;
+}
+
+a {
+ width: 50%; float: left; text-decoration: none; text-align: center;
+}
+
+li:hover, li:active {
+  background-color: yellowgreen;
+}
+
+li {
+   width: 90%; padding: 15px; margin: 3px; font-family: calibri; font-size: 20px; color: whitesmoke;
+   border: 1px dotted greenyellow; border-radius: 5px; background-color: lightslategrey; position: sticky;
+}
